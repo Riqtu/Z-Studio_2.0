@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="shortcut icon" href="img/icon.png" type="image/png">
+
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300&amp;subset=cyrillic" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/media.css">
+    <link rel="stylesheet" href="css/preloader.css">
+
+    <title>Z-Studio</title>
+</head>
+<body>
+    <div class="loader">
+        <div class="l_main">
+            <div class="l_square"><span></span><span></span><span></span></div>
+            <div class="l_square"><span></span><span></span><span></span></div>
+            <div class="l_square"><span></span><span></span><span></span></div>
+            <div class="l_square"><span></span><span></span><span></span></div>
+        </div>
+    </div>
+    <script>
+            loader = document.getElementsByClassName('loader');
+            function ready(){
+                loader[0].style.opacity = '0';
+                setTimeout(() => {
+                    loader[0].hidden = true;
+                }, 500);
+            }
+                window.onload = ready();
+    </script>
+
+    <div class="background">
+        <div class="background__img"></div>
+        <div class="background__img-logo">
+            <div class="img-overflow"></div>
+            <div class="img-text">Создание <br> логотипов</div>
+        </div>
+        <div class="background__img-youtube">
+            <div class="img-overflow"></div>
+            <div class="img-text">Оформление <br> каналов</div>
+        </div>
+        <div class="background__img-web">
+            <div class="img-overflow"></div>
+            <div class="img-text">Дизайн <br> Верстка</div>
+        </div>
+        <div class="background__figure-left"></div>
+        <div class="background__figure-right"></div>
+    </div>
+    <div class="logo">
+        <img src="img/logo.png" alt="">
+    </div>
+    <div class="contacts">
+        Свяжитесь со мной:
+        <a href="https://vk.com/xzetx3d"><img src="img/vk.svg" alt=""></a>
+        <a href="https://instagram.com/xzetx3d"><img src="img/instagram.svg" alt=""></a>
+    </div>
+    <div class="works">
+        <h2>Работы:</h2>
+            <h1 class="nclick" onmouseover="mouseOn(0)" onmouseout="mouseOff(0)" onclick="mouseClick(0)">Logo</h1>
+            <h1 class="nclick" onmouseover="mouseOn(1)" onmouseout="mouseOff(1)" onclick="mouseClick(1)">YouTube</h1>
+            <h1 class="nclick" onmouseover="mouseOn(2)" onmouseout="mouseOff(2)" onclick="mouseClick(2)">Web</h1>
+    </div>
+    <div class="about">
+            Данный проект разрабатывался исключительно для демонтстрации возможностей автора. 
+            Если вам понравилось и нужен красивый и креативный дизайн/проект/сайт, то свяжитесь со мной в 
+            вк или инстаграм. <br><br>
+            Внимание! Сайт находится в бета версии.
+    </div>
+    <div class="thisPage">Главная</div>
+    
+    <div class="menu-overflow"></div>
+
+    <div class="content">
+        <div class="phone-exit" onclick="phoneExit()">X</div>
+        <!-- LOGO -->
+        <div class="content__logo">
+            <div class="logo-item">
+                <img src="img/items/logoitem1.png" onclick = "clickItems(0)" class="l-img">
+                <div class="item-text">Логотип для института высоких технологий и пьезотехники (ЮФУ)</div>
+            </div>
+            <div class="logo-item">
+                <img src="img/items/logoitem7.png" onclick = "clickItems(1)" class="l-img">
+                <div class="item-text">Логотип для команды ИВТиПТ, участвующей в марафоне первокурсника</div>
+            </div>
+            <div class="logo-item">
+                <img src="img/items/logoitem2.png" onclick = "clickItems(2)" class="l-img">
+                <div class="item-text">Логотип на 25 летие медицинского лицея</div>
+            </div>
+            <div class="logo-item">
+                <img src="img/items/logoitem3.png" onclick = "clickItems(3)" class="l-img">
+                <div class="item-text">Логотип канала Viewers team</div>
+            </div>
+            <div class="logo-item">
+                <img src="img/items/logoitem4.png" onclick = "clickItems(4)" class="l-img">
+                <div class="item-text">Логотип группы ААИ (ЮФУ)</div>
+            </div>
+            <div class="logo-item">
+                <img src="img/items/logoitem5.png" onclick = "clickItems(5)" class="l-img">
+                <div class="item-text">Логотип на 25 летие медицинского лицея (альтернативный вариант)</div>
+            </div>
+            <div class="logo-item">
+                <img src="img/items/logoitem6.png" onclick = "clickItems(6)" class="l-img">
+                <div class="item-text">Логотип Riqtu</div>
+            </div>
+        </div>
+
+        <!-- YOUTUBE -->
+        <div class="content__youtube">
+            <img src="img/items/youtubeitem1.png" alt="">
+            <img src="img/item4min.png" alt="">
+        </div>
+
+        <!-- WEB -->
+        <div class="content__web">
+            <a href="http://xzetx.ru/coslovs/index.html"><img src="img/items/item1min.png" alt=""></a>
+            <a href="http://xzetx.ru/kadr/index.html"><img src="img/items/item4min.png" alt=""></a>
+            <a href="http://xzetx.ru/woodju/index.html"><img src="img/items/item5minl.png" alt=""></a>
+            <a href="http://xzetx.ru/wheresmoke/index.html"><img src="img/items/item6min.png" alt=""></a>
+        </div>
+
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

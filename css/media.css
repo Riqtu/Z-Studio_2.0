@@ -1,0 +1,306 @@
+
+/*==========  Desktop First  ==========*/
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1920px) and (min-width : 1690px){
+} 
+@media only screen and (max-width : 1690px) and (min-width : 1441px){
+}
+/* Small Devices, Tablets */
+@media only screen and (max-width : 1197px){
+    .img-text{
+        font-size: 20pt;
+    }
+    .background__img{
+        position: fixed;
+        width: calc(100% - 410px);
+        left: 200px;
+        height: 100vh;
+        background-image: url('../img/mainback.jpg');
+        background-size: cover;
+        background-position: center;
+        /* background-position-y: calc(50% - 100px); */
+        transition: 0.3s;
+    }
+    .img-text{
+        width: calc(100% - 450px);
+    }
+    .background__figure-right{
+        width: 370px;
+    }
+    .works h1{
+        font-size: 40pt;
+    }
+    .about{
+        font-size: 10pt;
+        width: 350px;
+    }
+    .content{
+        right: 50px;
+    }
+}
+@media only screen and (max-width : 1197px){
+    .content{
+        width: 400px;
+    }
+}
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 736px){
+    *{
+        --margins: 20px;
+    }
+    .logo img{
+        width: 50px;
+    }
+    .img-text{
+        font-size: 10pt;
+    }
+    .background__img{
+        position: fixed;
+        width: calc(100% - 410px);
+        left: 200px;
+        height: 100vh;
+        background-image: url('../img/mainback.jpg');
+        background-size: cover;
+        background-position: center;
+        /* background-position-y: calc(50% - 100px); */
+        transition: 0.3s;
+    }
+    .img-text{
+        width: calc(100% - 450px);
+    }
+    .background__figure-right{
+        width: 240px;
+    }
+    .background__figure-left{
+        width: 200px;
+    }
+    .works h1{
+        font-size: 30pt;
+    }
+    .about{
+        font-size: 10pt;
+        width: 250px;
+    }
+    .content{
+        right: 20px;
+    }
+    .works{
+        min-height: 400px;
+    }
+    .contacts{
+        font-size: 7pt;
+    }
+    .contacts img{
+        width: 20px;
+        top: 5px;
+    }
+    .content{
+        width: 330px;
+    }
+}
+@media only screen and (max-width : 667px){
+    *{
+        --margins: 19px;
+    }
+    .logo img{
+        width: 50px;
+    }
+    .img-text{
+        font-size: 8pt;
+    }
+    .background__img,.background__img-logo, .background__img-youtube, .background__img-web{
+        left: 190px;
+    }
+    .background__img-logo, .background__img-youtube, .background__img-web{
+        width: calc(100% - 190px);
+    }
+    .img-text{
+        position: fixed;
+        display: grid;
+        width: calc(100% - 420px);
+        left: 190px;
+    }
+    .background__figure-right{
+        width: 230px;
+    }
+    .background__figure-left{
+        width: 190px;
+    }
+    .works h1{
+        font-size: 25pt;
+    }
+    .about{
+        font-size: 8pt;
+        width: 240px;
+        right: var(--margins);
+    }
+    .content{
+        right: 20px;
+    }
+    .works{
+        min-height: 300px;
+    }
+    .contacts{
+        font-size: 7pt;
+    }
+    .contacts img{
+        width: 20px;
+        top: 5px;
+    }
+    .content{
+        width: 300px;
+    }
+}
+@media only screen and (max-width : 570px){
+    *{
+        --margins: 17px;
+    }
+    .logo img{
+        width: 50px;
+    }
+    .img-text{
+        font-size: 6pt;
+    }
+    .background__img,.background__img-logo, .background__img-youtube, .background__img-web{
+        left: 180px;
+        width: calc(100% - 300px);
+    }
+    .background__img-logo, .background__img-youtube, .background__img-web{
+        width: calc(100% - 180px);
+
+    }
+    .img-text{
+        position: fixed;
+        display: grid;
+        width: calc(100% - 350px);
+        left: 180px;
+    }
+    .background__figure-right{
+        width: 160px;
+    }
+    .background__figure-left{
+        width: 180px;
+    }
+    .works h1{
+        font-size: 18pt;
+    }
+    .about{
+        font-size: 6pt;
+        width: 180px;
+        right: var(--margins);
+    }
+    .content{
+        right: 20px;
+    }
+    .works{
+        min-height: 300px;
+    }
+    .contacts{
+        font-size: 7pt;
+    }
+    .contacts img{
+        width: 20px;
+        top: 5px;
+    }
+    .content{
+        width: 200px;
+        right: 5px;
+    }
+    .thisPage{
+        font-size: 10pt;
+    }
+}
+@media only screen and (max-width : 768px){
+    *{
+        --margins: 20px;
+    }
+    .logo img{
+        width: 70px;
+    }
+    body{
+        background-color: rgb(255, 255, 255);
+    }
+    .background__img{
+        width: calc(100% - 200px);
+        left: 200px;
+    }
+    .background__img-logo, .background__img-youtube, .background__img-web{
+    display: none;
+    }
+    .background__figure-left{
+        width: 400px;
+    }
+    .img-text{
+        display: none;
+    }
+    .background__figure-right{
+        display: none;
+    }
+    .about{
+        display: none;
+    }
+    .content{
+        width: 100%;
+        left: 0;
+        right: auto;
+        z-index: 100;
+        background: rgba(0, 0, 0, 0.89);
+    }
+    .phone-exit{
+        display: block;
+    }
+    .works h1{
+        font-size: 50pt;
+    }
+}
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 500px){
+    *{
+        --margins: 20px;
+    }
+    .thisPage{
+        display: none;
+    }
+    .logo img{
+        width: 70px;
+    }
+    body{
+        background-color: rgb(255, 255, 255);
+    }
+    .background__img{
+        width: calc(100% - 200px);
+        left: 200px;
+    }
+    .background__img-logo, .background__img-youtube, .background__img-web{
+    display: none;
+    }
+    .background__figure-left{
+        width: 200px;
+    }
+    .img-text{
+        display: none;
+    }
+    .background__figure-right{
+        display: none;
+    }
+    .about{
+        display: none;
+    }
+    .content{
+        width: 100%;
+        left: 0;
+        right: auto;
+        z-index: 100;
+        background: rgba(0, 0, 0, 0.89);
+    }
+    .phone-exit{
+        display: block;
+    }
+    .works h1{
+        font-size: 30pt;
+    }
+}
+
+@media only screen and (max-width : 320px){
+}
